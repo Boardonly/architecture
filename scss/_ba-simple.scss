@@ -1,0 +1,84 @@
+.ba-simple {
+  height: 100vh;
+  background-image: linear-gradient(
+    45deg,
+    rgb(85, 183, 255) 0%,
+    rgb(126, 90, 255) 100%
+  );
+
+  color: #fff;
+  position: relative;
+
+  .btn-arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__header {
+	 position: absolute;
+	 left: 13%;
+	 right: 12%;
+    padding-top: 54px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    > ul {
+      display: flex;
+      padding: 0;
+      align-items: center;
+    }
+    li + li {
+      margin-left: 101px;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+      text-transform: uppercase;
+    }
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+    a + a {
+      margin-left: 20px;
+    }
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 0.275;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.3em;
+  }
+  &__slider {
+    text-align: center;
+    width: 100%;
+    //  margin-top: 40%;
+  }
+  &__item {
+    background: no-repeat 50% / cover;
+    padding: 41vh 0;
+  }
+  .slick-dots{
+	  position: absolute;
+	  top: calc(50% - 70px);
+	  right: 0;
+	  cursor: pointer;
+	  button{
+		  display: none;
+	  }
+	 .slick-active{
+		color: #000;
+
+	  }
+  }
+}
